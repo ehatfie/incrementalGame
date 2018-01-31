@@ -46,3 +46,9 @@ public class Controller implements MouseListener {
     }
 
 }
+
+/*
+TODO:
+    IMPLEMENT A CLICKER TO GET MONEY
+
+ */

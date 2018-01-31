@@ -1,0 +1,5 @@
+1/31/2018
+   -   first setup
+   -   began implementation of Investments class
+   -   began implementation of a Player class
+   -   began implementation of an Upgrades class
