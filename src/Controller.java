@@ -9,10 +9,12 @@ import javax.swing.SwingUtilities;
 public class Controller implements MouseListener {
     Model model;
     View view;
+    Player player;
 
     Controller() throws IOException, Exception{
         model = new Model();
         view = new View(this);
+        player = new Player();
         new Timer(10, view).start();
     }
 
