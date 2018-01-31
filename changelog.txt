@@ -3,3 +3,4 @@
    -   began implementation of Investments class
    -   began implementation of a Player class
    -   began implementation of an Upgrades class
+   -   clicking screen updates player balance
