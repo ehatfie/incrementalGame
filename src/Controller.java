@@ -24,7 +24,7 @@ public class Controller implements MouseListener {
     public void mousePressed(MouseEvent e){
 
         if(SwingUtilities.isLeftMouseButton(e)){
-
+            player.updateBalance(1);
         } else if(SwingUtilities.isRightMouseButton(e)){
 
         }

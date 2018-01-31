@@ -4,7 +4,7 @@ public class Player {
     private int balance;
     // array of current upgrades
     //private Upgrades upgrades[];
-
+    private boolean debug = true;
     private int clickPower;
 
     Player(){
@@ -14,9 +14,16 @@ public class Player {
 
     public void updateBalance(int amount) {
         balance += amount;
+        displayBalance();
     }
     public void displayBalance(){
         System.out.println("Balance: " + balance);
+    }
+    // this is called constantly, use to update balance
+    public void update(){
+        //if(debug)
+            //System.out.println("Player Update called");
+
     }
     /*
     maybe a click modifier

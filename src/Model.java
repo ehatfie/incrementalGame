@@ -5,9 +5,11 @@ public class Model {
 
     private Player player;
 
-    Model()throws IOException {}
+    Model()throws IOException {
+        player = new Player();
+    }
 
     public void update(Graphics g){
-        player = new Player();
+        player.update();
     }
 }
