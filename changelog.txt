@@ -4,3 +4,4 @@
    -   began implementation of a Player class
    -   began implementation of an Upgrades class
    -   clicking screen updates player balance
+   -   balance is displayed on the frame and clicking updates it

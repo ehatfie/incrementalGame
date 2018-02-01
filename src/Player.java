@@ -16,9 +16,11 @@ public class Player {
         balance += amount;
         displayBalance();
     }
+
     public void displayBalance(){
         System.out.println("Balance: " + balance);
     }
+    public int getBalance(){ return balance; }
     // this is called constantly, use to update balance
     public void update(){
         //if(debug)

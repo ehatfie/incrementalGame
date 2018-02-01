@@ -7,14 +7,16 @@ import javax.swing.Timer;
 import javax.swing.SwingUtilities;
 
 public class Controller implements MouseListener {
+    Player player;
     Model model;
     View view;
-    Player player;
+
 
     Controller() throws IOException, Exception{
         model = new Model();
-        view = new View(this);
         player = new Player();
+        view = new View(this);
+
         new Timer(10, view).start();
     }
 
@@ -25,6 +27,7 @@ public class Controller implements MouseListener {
 
         if(SwingUtilities.isLeftMouseButton(e)){
             player.updateBalance(1);
+            view.label.setText("Balance: " + String.valueOf(player.getBalance()));
         } else if(SwingUtilities.isRightMouseButton(e)){
 
         }
